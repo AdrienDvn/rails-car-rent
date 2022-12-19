@@ -1,1 +1,10 @@
+<div class=container>
 <h1>hello from Bookings#new</h1>
+
+<%= simple_form_for(@car) do |f| %>
+  <%= f.input :brand %>
+  <%= f.input :model %>
+  <%= f.input :price %>
+  <%= f.submit %>
+<% end %>
+</div>
