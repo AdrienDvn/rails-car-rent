@@ -1,5 +1,5 @@
 class Car < ApplicationRecord
-  belongs_to :user
+  # belongs_to :user
 
   validates :brand, presence: true
   validates :price, presence: true

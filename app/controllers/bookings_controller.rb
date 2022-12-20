@@ -16,7 +16,7 @@ class BookingsController < ApplicationController
     @booking = booking.new(booking_params)
     @car = Car.find(params[:car_id])
     @booking.car = @car
-    @booking.user = current_user
+    # @booking.user = current_user
     if @booking.save!
       redirect_to bookings_path(@booking)
     else
@@ -28,7 +28,7 @@ class BookingsController < ApplicationController
     @booking = Booking.find(params[:id])
     @car = Car.find(params[:car_id])
     @booking.car = @car
-    @booking.user = current_user
+    # @booking.user = current_user
     @booking.save
     redirect_to new_car_booking_path(@booking)
   end

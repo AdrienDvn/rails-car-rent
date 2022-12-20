@@ -10,7 +10,7 @@ class CarsController < ApplicationController
 
   def create
     @car = Car.new(car_params)
-    @car.user = current_user
+    # @car.user = current_user
     if @car.save
       redirect_to car_path(@car)
     else
@@ -20,7 +20,7 @@ class CarsController < ApplicationController
 
   def edit
     @car = Car.new(params[:id])
-    @car.user = current_user
+    # @car.user = current_user
     @car.save
     redirect_to cars_path
   end
