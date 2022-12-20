@@ -1,1 +1,10 @@
 <h1>hello from Cars#show</h1>
+<div class=container>
+<h1><%= @car.brand %></h1>
+<h1><%= @car.model %></h1>
+<h1><%= @car.price %></h1>
+</div>
+
+<%= link_to "back to list", cars_path%>
+<%#= lien vers le delete link_to "delete this car", car_path(car.id)%>
+<%= link_to "book this car", new_car_booking_path(@car)%>

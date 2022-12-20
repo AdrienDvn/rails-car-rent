@@ -1,1 +1,20 @@
 <h1>hello from Bookings#new</h1>
+
+<div class=container>
+<ul>
+  <%= simple_form_for(@booking) do |f| %>
+  <%= f.input :start_date %>
+  <%= f.input :end_date %>
+
+  <%= f.submit %>
+<% end %>
+</ul>
+</div>
+
+<%= link_to "back to cars", cars_path%>
+<%#= link_to "update booking", edit_booking_path%>
+
+</div>
+
+
+<%#= link_to "book this car", car_bookings_path%>
