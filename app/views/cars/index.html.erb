@@ -1,1 +1,15 @@
 <h1>hello from Cars#index</h1>
+<div class=container>
+<ul>
+  <% @cars.each do |car| %>
+    <li> <%=car.brand%></li>
+    <li> <%=car.model%></li>
+    <li> <%=car.price%></li>
+    <%= link_to "select this car", car_path(car.id)%>
+  <% end %>
+</ul>
+</div>
+
+<%= link_to "Add car", new_car_path%>
+
+</div>
