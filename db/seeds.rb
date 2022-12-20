@@ -11,7 +11,7 @@ puts "creating user"
 User.destroy_all
 Car.destroy_all
 
-User.create!(first_name: "Antoine", last_name: "Dupont", email: "tata@gmail.com", password: "123456", age: "25")
+user1 = User.create!(first_name: "Antoine", last_name: "Dupont", email: "tata@gmail.com", password: "123456", age: "25")
 # # user1.photo.attach(io: antoine, filename: "antoine.jpeg", content_type: "image/jpeg")
 puts "creating seed"
 Car1 = Car.create(brand: "pigeot", model: "206", price: 3000)
@@ -20,3 +20,5 @@ Car3 = Car.create(brand: "alfa", model: "146", price: 3000)
 Car4 = Car.create(brand: "lada", model: "tundra", price: 3000)
 Car5 = Car.create(brand: "bmw", model: "340i", price: 3000)
 puts "finishing seed"
+
+#si user_id utiliser user_id: user.id
